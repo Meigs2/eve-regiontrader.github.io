@@ -17,6 +17,11 @@
 				font-family: monospace;
 			}
 		</style>
+		<script>
+			function scam() {
+				document.getElementById("scam").innerHTML = "Error: Character invalid";
+			}
+		</script>
 	</head>
 	<body style="background-color:black">
 		<h1 style="font-family:monospace;color:lime"><b>RegionTrader</b></h1>
@@ -44,6 +49,8 @@
 		</p>
 		<input type="text"></input>
 		<br>
-		<button type="button">Go!</button>
+		<button type="button" onclick="scam()">Go!</button>
+		<br>
+		<p id="scam" style="font-family:monospace;color:red"></p>
 	</body>
 </html>
